@@ -5,4 +5,22 @@
 #
 Template, Hostname, Vendor, Version, Command
 arista_eos_show_ip_bgp_summary_v1.template, .*, Arista, V1, sh[[ow]] ip bgp summary[[ vrf all]]$
+
+# Version DEFUALT templtes (any other version should be above this line)
 arista_eos_show_ip_bgp_summary.template, .*, Arista, DEFAULT, sh[[ow]] ip bgp summary[[ vrf all]]$
+arista_eos_show_ip_ospf_neighbor.template, .*, Arista, DEFAULT, sh[[ow]] ip ospf neigh[[bor]]$
+arista_eos_show_ip_route.template, .*, Arista, DEFAULT, sh[[ow]] ip route$
+arista_eos_show_interfaces.template, .*, Arista, DEFAULT, sh[[ow]] interface[[s]]$
+arista_eos_show_ip_bgp.template, .*, Arista, DEFAULT, sh[[ow]] ip bgp vrf all$
+arista_eos_show_ip_mfib.template, .*, Arista, DEFAULT, sh[[ow]] ip mfib$
+arista_eos_show_ip_mroute.template, .*, Arista, DEFAULT, sh[[ow]] ip mroute$
+arista_eos_show_ip_ospf_database.template, .*, Arista, DEFAULT, sh[[ow]] ip ospf database$
+arista_eos_show_ip_pim_interface.template, .*, Arista, DEFAULT, sh[[ow]] ip pim interface$
+
+arista_eos_show_ip_route.template, .*, Arista, DEFAULT, sh[[ow]] ip route$
+arista_eos_show_ip_route.template, .*, Arista, DEFAULT, sh[[ow]] ip route$
+arista_eos_show_ip_route.template, .*, Arista, DEFAULT, sh[[ow]] ip route$
+arista_eos_show_ip_route.template, .*, Arista, DEFAULT, sh[[ow]] ip route$
+arista_eos_show_ip_route.template, .*, Arista, DEFAULT, sh[[ow]] ip route$
+arista_eos_show_ip_route.template, .*, Arista, DEFAULT, sh[[ow]] ip route$
+arista_eos_show_ip_route.template, .*, Arista, DEFAULT, sh[[ow]] ip route$

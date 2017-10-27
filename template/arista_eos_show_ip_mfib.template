@@ -1,0 +1,17 @@
+Value MCAST_GROUP (\d+\.\d+\.\d+\.\d+)
+Value MCAST_SOURCE (\d+\.\d+\.\d+\.\d+|\d+\.\d+\.\d+\.\d+/\d+)
+Value INCOMING_INF (\S+)
+Value List OUTGOING_INF (\S+)
+Value FAST_DROP (\S+)
+
+Start
+  ^  ${MCAST_GROUP} ${MCAST_SOURCE} -> Interfaces
+  ^  ${MCAST_GROUP} -> Interfaces
+
+Interfaces
+  ^    ${INCOMING_INF} \(iif\)
+  ^    ${OUTGOING_INF}
+  ^      Fastdrops in ${FAST_DROP}
+  ^.* -> Continue.Record
+  ^  ${MCAST_GROUP} ${MCAST_SOURCE}
+  ^  ${MCAST_GROUP}

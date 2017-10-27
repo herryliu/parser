@@ -1,8 +1,8 @@
-#!/usr/bin/env python
 from __future__ import print_function
 from __future__ import absolute_import
 
 import pandas as pd
+from prettytable import PrettyTable
 import textfsm
 import clitable
 
@@ -84,7 +84,7 @@ class DiffTable(object):
     new/missing/changed entries
     '''
     @staticmethod
-    def diff_generic(data_1, data_2, diff_conf):
+    def diff_generic(data_1, data_2, diff_conf, check_type='exactly', raw_format=False):
         '''
         The generic diff for two tbales with same format
         '''
@@ -105,10 +105,13 @@ class DiffTable(object):
             t1 = t1_grouped.agg(lambda x: tuple(x)).reset_index() # pylint: disable=W0108
             t2 = t2_grouped.agg(lambda x: tuple(x)).reset_index() # pylint: disable=W0108
 
-
         # make a outer join to formulate a table with all entreis
         result_table = pd.merge(t1, t2, on=index, how='outer',
                                 suffixes=['_L', '_R'], indicator='DIFF_RESULT')
+
+        # if raw_format is required, the outer join table will be return as pd.DataFrame
+        if raw_format:
+            return result_table
 
         # diff table convert to a list
         # insert a dummy column name at the front to match the merge operation
@@ -119,54 +122,99 @@ class DiffTable(object):
         result_slice['seq'] = slice(0, 1)
         result_slice['index'] = slice(1, len(index)+1)
         result_slice['left'] = slice(len(index)+1, len(data_1[0])+1)
-        result_slice['right'] = slice(len(data_1[0])+1, 2*len(data_1[0])-1)
-        result_slice['diff'] = slice(2*len(data_1[0])-1, 2*len(data_1[0]))
+        result_slice['right'] = slice(len(data_1[0])+1, len(data_1[0])+1+len(data_1[0])-len(index))
+        result_slice['diff'] = slice(len(data_1[0])+1+len(data_1[0])-len(index),
+                                     len(data_1[0])+1+len(data_1[0])-len(index)+1)
 
         # find out which entry is new / missing / changed
-        diff = DiffTable.get_diffs(result, result_slice, diff_conf['check'])
-        #pprint.pprint(diff, width=2000)
+        diff = DiffTable.get_diffs(result, result_slice, diff_conf, check_type)
         return diff
 
     @staticmethod
-    def get_diffs(result, result_slice, check):
+    def get_diffs(result, result_slice, diff_conf, check_type='exactly'):
         '''
         Process the outer join table and format it into a dictionary with new/missing/changed
         The "check" is a list of fileds for comparision based on
         '''
-        diff = {'new': [],
+        check = diff_conf['check']
+
+        diff = {'config': diff_conf,
+                'header': result[0][result_slice['index']]+ \
+                          [x.rstrip('_L') for x in result[0][result_slice['left']]],
+                'same': [],
+                'new': [],
                 'missing': [],
                 'changed': [],
-                'header': result[0][result_slice['index']]+ \
-                          [x.rstrip('_L') for x in result[0][result_slice['left']]]
                }
 
         # the column name is appended with _L or _R for non-index field
         all_column = result[0]
         # find all checking pair index according to column name
-        full_index = [(all_column.index(c+'_L'), all_column.index(c+'_R')) for c in check]
-        left_index = [x[0] for x in full_index]
-        right_index = [x[1] for x in full_index]
+        left_index = []
+        right_index = []
+        if check != [] and check != ['']:
+            full_index = [(all_column.index(c+'_L'), all_column.index(c+'_R')) for c in check]
+            left_index = [x[0] for x in full_index]
+            right_index = [x[1] for x in full_index]
         indicator_index = all_column.index('DIFF_RESULT')
 
         # for each record, indictor_index either be 'left_only', 'right_only' or 'both'
         for r in result[1:]:
-            # new entry if 'leff_only'
+            # missing entry if 'leff_only'
             if r[indicator_index] == 'left_only':
-                diff['new'].append(r[result_slice['index']] + r[result_slice['left']])
+                diff['missing'].append(r[result_slice['index']] + r[result_slice['left']])
                 continue
-            # missing entry if 'right_only'
+            # new entry if 'right_only'
             if r[indicator_index] == 'right_only':
-                diff['missing'].append(r[result_slice['index']] + r[result_slice['right']])
+                diff['new'].append(r[result_slice['index']] + r[result_slice['right']])
                 continue
             # find out the changes if 'both'
             if r[indicator_index] == 'both':
+                # if left_index and right index is empty means only compare the index
+                # which will append to same and move to next entry
+                if left_index == [] and right_index == []:
+                    diff['same'].append(r[result_slice['index']] + \
+                                        r[result_slice['left']])
+                    continue
                 left = [r[i] for i in left_index]
                 right = [r[i] for i in right_index]
-                if left != right:
-                    diff['changed'].append({'lef': r[result_slice['left']],
-                                            'right': r[result_slice['right']]
+                if not DiffTable.check_is_same(left, right, check_type):
+                    diff['changed'].append({'left': r[result_slice['index']] + \
+                                                     r[result_slice['left']],
+                                            'right': r[result_slice['index']] + \
+                                                       r[result_slice['right']],
                                            })
+                else:
+                    diff['same'].append(r[result_slice['index']] + \
+                                        r[result_slice['left']])
         return diff
+
+    @staticmethod
+    def check_is_same(left, right, check_type):
+        # the sequence is important for each item
+        # same number of item with different sequence considered to be different
+        if check_type == 'exactly':
+            return True if left == right else False
+
+        # only the content is important and sequence it not important
+        # break the items into individual and form a set for comparision
+        if check_type == 'content':
+            left_set = DiffTable._make_set(left)
+            right_set = DiffTable._make_set(right)
+            return True if left_set == right_set else False
+
+    @staticmethod
+    def _make_set(data):
+        # assume data is list or tuple
+        # each member of list/tuple will be break down into member of set
+        result_set = set()
+        for d in data:
+            if isinstance(d, list) or isinstance(d, tuple):
+                for dd in d:
+                    result_set.add(dd)
+            else:
+                result_set.add(d)
+        return result_set
 
     @staticmethod
     def check_data_format(data_1, data_2, diff_conf):
@@ -179,10 +227,61 @@ class DiffTable(object):
                   data_1, data_2)
             return False
         # check if the diff_conf using the right column name
-        column_name = data_1[0]
+        column_name = data_1[0] + ['']
         for conf in diff_conf.values():
             # check if conf is subset of column name
             if not frozenset(conf).issubset(frozenset(column_name)):
                 print("diff_conf %s is not in %s" % (conf, column_name))
                 return False
         return True
+
+    @staticmethod
+    def get_header(diff):
+        if not diff:
+            return None
+        return diff['header']
+
+    @staticmethod
+    def get_diff_sort_field(diff):
+        if not diff:
+            return None
+        return diff['config']
+
+    @staticmethod
+    def get_index_by_field(diff, field):
+        return diff['header'].index(field)
+
+    @staticmethod
+    def print_diff_entries(diff, print_same=False):
+        # given a diff and print out changed/new/missing/same entiries
+
+        # print the changed entries
+        header_l = [h+'_L' for h in diff['header']]
+        header_r = [h+'_R' for h in diff['header']]
+        data = [header_l+header_r]
+        for line in diff['changed']:
+            data.append(line['left'] + line['right'])
+        DiffTable.pretty_table_print(data, title='Changed Entries:')
+
+        # print new entries
+        DiffTable.pretty_table_print([diff['header']] + diff['new'], title='New Entries:')
+
+        # print the missing entries
+        DiffTable.pretty_table_print([diff['header']] + diff['missing'], title='Missing Entries:')
+
+        # print the same entries
+        if print_same:
+            DiffTable.pretty_table_print([diff['header']] + diff['same'],
+                                         title='Unchanged Entries:')
+
+    @staticmethod
+    def pretty_table_print(data, title=None):
+        # make use of PrettyTable to print out a list
+        # the first entry of list is column name and reset are rows of data
+        t = PrettyTable()
+        t._set_field_names(data[0]) # pylint: disable=W0212
+        for line in data[1:]:
+            t.add_row(line)
+        if title:
+            print("%s" % title)
+        print(t)

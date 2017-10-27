@@ -1,0 +1,388 @@
+
+
+Interface Ethernet1 detected 0 LLDP neighbors:
+
+Interface Ethernet2 detected 0 LLDP neighbors:
+
+Interface Ethernet3 detected 0 LLDP neighbors:
+
+Interface Ethernet4 detected 1 LLDP neighbors:
+
+  Neighbor 444c.a80e.7da5/Ethernet46, age 15 seconds
+  Discovered 480 days, 1:58:01 ago; Last changed 480 days, 1:58:01 ago
+    - Chassis ID type: MAC address (4)
+      Chassis ID     : 444c.a80e.7da5
+    - Port ID type: Interface name (5)
+      Port ID     : "Ethernet46"
+    - Time To Live: 120 seconds
+    - Port Description: "carcore3-e-4"
+    - System Name: "carecn5.hudson-trading.com"
+    - System Description: "Arista Networks EOS version 4.13.10M running on an Arista Networks DCS-7150S-64-CL"
+    - System Capabilities : Bridge, Router
+      Enabled Capabilities: Bridge, Router
+    - Management Address Subtype: IPv4 (1)
+      Management Address        : 10.5.254.6
+      Interface Number Subtype  : ifIndex (2)
+      Interface Number          : 5000000
+      OID String                : 
+    - IEEE802.1 Port VLAN ID: 0
+    - IEEE802.1/IEEE802.3 Link Aggregation
+      Link Aggregation Status: Capable, Disabled (0x01)
+      Port ID                : 0
+    - IEEE802.3 Maximum Frame Size: 9236 bytes
+
+Interface Ethernet5 detected 0 LLDP neighbors:
+
+Interface Ethernet6 detected 1 LLDP neighbors:
+
+  Neighbor 748e.f821.02c0/748e.f821.02d5, age 12 seconds
+  Discovered 323 days, 8:38:02 ago; Last changed 323 days, 8:38:02 ago
+    - Chassis ID type: MAC address (4)
+      Chassis ID     : 748e.f821.02c0
+    - Port ID type: MAC address (3)
+      Port ID     : 748e.f821.02d5
+    - Time To Live: 120 seconds
+    - Port Description: "10GigabitEthernet22"
+    - System Name: "ncore-6a5"
+    - System Capabilities : Bridge, Router
+      Enabled Capabilities: Bridge, Router
+    - Management Address Subtype: IPv4 (1)
+      Management Address        : 10.5.253.70
+      Interface Number Subtype  : ifIndex (2)
+      Interface Number          : 22
+      OID String                : 
+    - IEEE802.1 Port VLAN ID: 0
+    - IEEE802.1/IEEE802.3 Link Aggregation
+      Link Aggregation Status: Not Capable (0x00)
+      Port ID                : 0
+    - IEEE802.3 MAC/PHY Configuration/Status
+      Auto-negotiation       : Supported, Disabled
+      Advertised Capabilities: None
+      Operational MAU Type   : 10GBASE-LR (35)
+    - IEEE802.3 Maximum Frame Size: 1522 bytes
+
+Interface Ethernet7 detected 1 LLDP neighbors:
+
+  Neighbor 001c.730f.2123/Ethernet22, age 28 seconds
+  Discovered 122 days, 10:33:50 ago; Last changed 122 days, 10:33:50 ago
+    - Chassis ID type: MAC address (4)
+      Chassis ID     : 001c.730f.2123
+    - Port ID type: Interface name (5)
+      Port ID     : "Ethernet22"
+    - Time To Live: 120 seconds
+    - Port Description: "carcore3-et-7"
+    - System Name: "cardist1g1.hudson-trading.com"
+    - System Description: "Arista Networks EOS version 4.13.16M running on an Arista Networks DCS-7124SX"
+    - System Capabilities : Bridge, Router
+      Enabled Capabilities: Bridge
+    - Management Address Subtype: IPv4 (1)
+      Management Address        : 10.5.248.57
+      Interface Number Subtype  : ifIndex (2)
+      Interface Number          : 999001
+      OID String                : 
+    - IEEE802.1 Port VLAN ID: 991
+    - IEEE802.1/IEEE802.3 Link Aggregation
+      Link Aggregation Status: Capable, Disabled (0x01)
+      Port ID                : 0
+    - IEEE802.3 Maximum Frame Size: 9236 bytes
+
+Interface Ethernet8 detected 0 LLDP neighbors:
+
+Interface Ethernet9 detected 1 LLDP neighbors:
+
+  Neighbor 001c.731e.f07a/Ethernet17, age 5 seconds
+  Discovered 105 days, 8:35:58 ago; Last changed 105 days, 8:35:58 ago
+    - Chassis ID type: MAC address (4)
+      Chassis ID     : 001c.731e.f07a
+    - Port ID type: Interface name (5)
+      Port ID     : "Ethernet17"
+    - Time To Live: 120 seconds
+    - Port Description: "CFN91425 carcore3-e-9 1-5395997681 PP:0210:157022,3, 4 ALERT-ON-ME"
+    - System Name: "kcore4.hudson-trading.com"
+    - System Description: "Arista Networks EOS version 4.13.13M running on an Arista Networks DCS-7150S-52-CL"
+    - System Capabilities : Bridge, Router
+      Enabled Capabilities: Bridge, Router
+    - Management Address Subtype: IPv4 (1)
+      Management Address        : 10.12.159.8
+      Interface Number Subtype  : ifIndex (2)
+      Interface Number          : 5000000
+      OID String                : 
+    - IEEE802.1 Port VLAN ID: 808
+    - IEEE802.1/IEEE802.3 Link Aggregation
+      Link Aggregation Status: Capable, Enabled (0x03)
+      Port ID                : 1000008
+    - IEEE802.3 Maximum Frame Size: 9236 bytes
+
+Interface Ethernet10 detected 1 LLDP neighbors:
+
+  Neighbor 001c.731e.f07a/Ethernet18, age 5 seconds
+  Discovered 144 days, 1:23:48 ago; Last changed 144 days, 1:23:48 ago
+    - Chassis ID type: MAC address (4)
+      Chassis ID     : 001c.731e.f07a
+    - Port ID type: Interface name (5)
+      Port ID     : "Ethernet18"
+    - Time To Live: 120 seconds
+    - Port Description: "HFN00351 carcore3-e-10 ID:4693544 PP:0210:86291|27,28 HFN 06495:PP:0108:0108:147736|5,6 ALERT-ON-ME"
+    - System Name: "kcore4.hudson-trading.com"
+    - System Description: "Arista Networks EOS version 4.13.13M running on an Arista Networks DCS-7150S-52-CL"
+    - System Capabilities : Bridge, Router
+      Enabled Capabilities: Bridge, Router
+    - Management Address Subtype: IPv4 (1)
+      Management Address        : 10.12.159.8
+      Interface Number Subtype  : ifIndex (2)
+      Interface Number          : 5000000
+      OID String                : 
+    - IEEE802.1 Port VLAN ID: 808
+    - IEEE802.1/IEEE802.3 Link Aggregation
+      Link Aggregation Status: Capable, Enabled (0x03)
+      Port ID                : 1000008
+    - IEEE802.3 Maximum Frame Size: 9236 bytes
+
+Interface Ethernet11 detected 1 LLDP neighbors:
+
+  Neighbor 001c.73c6.48ab/Ethernet7, age 7 seconds
+  Discovered 60 days, 2:23:27 ago; Last changed 60 days, 2:23:25 ago
+    - Chassis ID type: MAC address (4)
+      Chassis ID     : 001c.73c6.48ab
+    - Port ID type: Interface name (5)
+      Port ID     : "Ethernet7"
+    - Time To Live: 120 seconds
+    - Port Description: "CFN-Carteret ID:20084952-A PP:0000:196454|9,10 ALERT-ON-ME circuitid "CFN91475""
+    - System Name: "ny5core4.hudson-trading.com"
+    - System Description: "Arista Networks EOS version 4.13.13M running on an Arista Networks DCS-7150S-64-CL"
+    - System Capabilities : Bridge, Router
+      Enabled Capabilities: Bridge, Router
+    - Management Address Subtype: IPv4 (1)
+      Management Address        : 10.12.255.2
+      Interface Number Subtype  : ifIndex (2)
+      Interface Number          : 5000000
+      OID String                : 
+    - IEEE802.1 Port VLAN ID: 0
+    - IEEE802.1/IEEE802.3 Link Aggregation
+      Link Aggregation Status: Capable, Enabled (0x03)
+      Port ID                : 1000007
+    - IEEE802.3 Maximum Frame Size: 9236 bytes
+
+Interface Ethernet12 detected 1 LLDP neighbors:
+
+  Neighbor 001c.730f.4832/Ethernet8, age 17 seconds
+  Discovered 24 days, 3:11:43 ago; Last changed 24 days, 3:11:43 ago
+    - Chassis ID type: MAC address (4)
+      Chassis ID     : 001c.730f.4832
+    - Port ID type: Interface name (5)
+      Port ID     : "Ethernet8"
+    - Time To Live: 120 seconds
+    - Port Description: "CFN91411 to carcore3 e12 ALERT-ON-ME"
+    - System Name: "goocore3.hudson-trading.com"
+    - System Description: "Arista Networks EOS version 4.9.7 running on an Arista Networks DCS-7124SX"
+    - System Capabilities : Bridge, Router
+      Enabled Capabilities: Bridge, Router
+    - Management Address Subtype: IPv4 (1)
+      Management Address        : 10.12.63.4
+      Interface Number Subtype  : ifIndex (2)
+      Interface Number          : 5000000
+      OID String                : 
+    - IEEE802.1 Port VLAN ID: 0
+    - IEEE802.1/IEEE802.3 Link Aggregation
+      Link Aggregation Status: Capable, Disabled (0x01)
+      Port ID                : 0
+    - IEEE802.3 Maximum Frame Size: 9236 bytes
+
+Interface Ethernet13 detected 1 LLDP neighbors:
+
+  Neighbor 001c.73c6.48ab/Ethernet8, age 20 seconds
+  Discovered 60 days, 2:23:28 ago; Last changed 60 days, 2:23:26 ago
+    - Chassis ID type: MAC address (4)
+      Chassis ID     : 001c.73c6.48ab
+    - Port ID type: Interface name (5)
+      Port ID     : "Ethernet8"
+    - Time To Live: 120 seconds
+    - Port Description: "CFN-Carteret ID:20106207-A PP:0000:204338|1,2 ALERT-ON-ME circuitid "CFN90698""
+    - System Name: "ny5core4.hudson-trading.com"
+    - System Description: "Arista Networks EOS version 4.13.13M running on an Arista Networks DCS-7150S-64-CL"
+    - System Capabilities : Bridge, Router
+      Enabled Capabilities: Bridge, Router
+    - Management Address Subtype: IPv4 (1)
+      Management Address        : 10.12.255.2
+      Interface Number Subtype  : ifIndex (2)
+      Interface Number          : 5000000
+      OID String                : 
+    - IEEE802.1 Port VLAN ID: 0
+    - IEEE802.1/IEEE802.3 Link Aggregation
+      Link Aggregation Status: Capable, Enabled (0x03)
+      Port ID                : 1000007
+    - IEEE802.3 Maximum Frame Size: 9236 bytes
+
+Interface Ethernet14 detected 0 LLDP neighbors:
+
+Interface Ethernet15 detected 0 LLDP neighbors:
+
+Interface Ethernet16 detected 0 LLDP neighbors:
+
+Interface Ethernet17 detected 1 LLDP neighbors:
+
+  Neighbor 444c.a80e.9b8d/Ethernet52/3, age 6 seconds
+  Discovered 483 days, 20:39:38 ago; Last changed 483 days, 20:39:38 ago
+    - Chassis ID type: MAC address (4)
+      Chassis ID     : 444c.a80e.9b8d
+    - Port ID type: Interface name (5)
+      Port ID     : "Ethernet52/3"
+    - Time To Live: 120 seconds
+    - Port Description: "carcore3-e-17"
+    - System Name: "carecn6.hudson-trading.com"
+    - System Description: "Arista Networks EOS version 4.13.13M running on an Arista Networks DCS-7150S-64-CL"
+    - System Capabilities : Bridge, Router
+      Enabled Capabilities: Bridge, Router
+    - Management Address Subtype: IPv4 (1)
+      Management Address        : 10.5.254.7
+      Interface Number Subtype  : ifIndex (2)
+      Interface Number          : 5000000
+      OID String                : 
+    - IEEE802.1 Port VLAN ID: 0
+    - IEEE802.1/IEEE802.3 Link Aggregation
+      Link Aggregation Status: Capable, Disabled (0x01)
+      Port ID                : 0
+    - IEEE802.3 Maximum Frame Size: 9236 bytes
+
+Interface Ethernet18 detected 0 LLDP neighbors:
+
+Interface Ethernet19 detected 0 LLDP neighbors:
+
+Interface Ethernet20 detected 0 LLDP neighbors:
+
+Interface Ethernet21 detected 0 LLDP neighbors:
+
+Interface Ethernet22 detected 0 LLDP neighbors:
+
+Interface Ethernet23 detected 0 LLDP neighbors:
+
+Interface Ethernet24 detected 0 LLDP neighbors:
+
+Interface Ethernet25 detected 0 LLDP neighbors:
+
+Interface Ethernet26 detected 0 LLDP neighbors:
+
+Interface Ethernet27 detected 0 LLDP neighbors:
+
+Interface Ethernet28 detected 0 LLDP neighbors:
+
+Interface Ethernet29 detected 0 LLDP neighbors:
+
+Interface Ethernet30 detected 0 LLDP neighbors:
+
+Interface Ethernet31 detected 0 LLDP neighbors:
+
+Interface Ethernet32 detected 0 LLDP neighbors:
+
+Interface Ethernet33 detected 0 LLDP neighbors:
+
+Interface Ethernet34 detected 0 LLDP neighbors:
+
+Interface Ethernet35 detected 0 LLDP neighbors:
+
+Interface Ethernet36 detected 0 LLDP neighbors:
+
+Interface Ethernet37 detected 0 LLDP neighbors:
+
+Interface Ethernet38 detected 0 LLDP neighbors:
+
+Interface Ethernet39 detected 0 LLDP neighbors:
+
+Interface Ethernet40 detected 0 LLDP neighbors:
+
+Interface Ethernet41 detected 1 LLDP neighbors:
+
+  Neighbor 001c.73a4.4c6d/Ethernet51/1, age 25 seconds
+  Discovered 221 days, 0:35:58 ago; Last changed 221 days, 0:35:58 ago
+    - Chassis ID type: MAC address (4)
+      Chassis ID     : 001c.73a4.4c6d
+    - Port ID type: Interface name (5)
+      Port ID     : "Ethernet51/1"
+    - Time To Live: 120 seconds
+    - Port Description: "carcore3-et-1 ALERT-ON-ME"
+    - System Name: "cardist1.hudson-trading.com"
+    - System Description: "Arista Networks EOS version 4.13.10M running on an Arista Networks DCS-7150S-64-CL"
+    - System Capabilities : Bridge, Router
+      Enabled Capabilities: Bridge
+    - Management Address Subtype: IPv4 (1)
+      Management Address        : 10.5.248.30
+      Interface Number Subtype  : ifIndex (2)
+      Interface Number          : 999001
+      OID String                : 
+    - IEEE802.1 Port VLAN ID: 104
+    - IEEE802.1/IEEE802.3 Link Aggregation
+      Link Aggregation Status: Capable, Disabled (0x01)
+      Port ID                : 0
+    - IEEE802.3 Maximum Frame Size: 9236 bytes
+
+Interface Ethernet42 detected 1 LLDP neighbors:
+
+  Neighbor 001c.73c4.9f47/Ethernet42, age 8 seconds
+  Discovered 418 days, 2:51:36 ago; Last changed 418 days, 2:51:36 ago
+    - Chassis ID type: MAC address (4)
+      Chassis ID     : 001c.73c4.9f47
+    - Port ID type: Interface name (5)
+      Port ID     : "Ethernet42"
+    - Time To Live: 120 seconds
+    - Port Description: "carcore3-e-42-40G ALERT-ON-ME"
+    - System Name: "carcore4.hudson-trading.com"
+    - System Description: "Arista Networks EOS version 4.13.13M running on an Arista Networks DCS-7150S-64-CL"
+    - System Capabilities : Bridge, Router
+      Enabled Capabilities: Bridge, Router
+    - Management Address Subtype: IPv4 (1)
+      Management Address        : 10.5.254.3
+      Interface Number Subtype  : ifIndex (2)
+      Interface Number          : 5000000
+      OID String                : 
+    - IEEE802.1 Port VLAN ID: 990
+    - IEEE802.1/IEEE802.3 Link Aggregation
+      Link Aggregation Status: Capable, Disabled (0x01)
+      Port ID                : 0
+    - IEEE802.3 Maximum Frame Size: 9236 bytes
+
+Interface Ethernet43 detected 0 LLDP neighbors:
+
+Interface Ethernet44 detected 0 LLDP neighbors:
+
+Interface Ethernet45 detected 0 LLDP neighbors:
+
+Interface Ethernet46 detected 0 LLDP neighbors:
+
+Interface Ethernet47 detected 0 LLDP neighbors:
+
+Interface Ethernet48 detected 0 LLDP neighbors:
+
+Interface Ethernet49/1 detected 0 LLDP neighbors:
+
+Interface Ethernet49/2 detected 0 LLDP neighbors:
+
+Interface Ethernet49/3 detected 0 LLDP neighbors:
+
+Interface Ethernet49/4 detected 0 LLDP neighbors:
+
+Interface Ethernet50/1 detected 0 LLDP neighbors:
+
+Interface Ethernet50/2 detected 0 LLDP neighbors:
+
+Interface Ethernet50/3 detected 0 LLDP neighbors:
+
+Interface Ethernet50/4 detected 0 LLDP neighbors:
+
+Interface Ethernet51/1 detected 0 LLDP neighbors:
+
+Interface Ethernet51/2 detected 0 LLDP neighbors:
+
+Interface Ethernet51/3 detected 0 LLDP neighbors:
+
+Interface Ethernet51/4 detected 0 LLDP neighbors:
+
+Interface Ethernet52/1 detected 0 LLDP neighbors:
+
+Interface Ethernet52/2 detected 0 LLDP neighbors:
+
+Interface Ethernet52/3 detected 0 LLDP neighbors:
+
+Interface Ethernet52/4 detected 0 LLDP neighbors:
+
+Interface Management1 detected 0 LLDP neighbors:
+

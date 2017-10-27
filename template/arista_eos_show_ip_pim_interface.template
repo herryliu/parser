@@ -1,0 +1,17 @@
+Value ADDRESS (\S+)
+Value INTERFACE (\S+)
+Value MODE (\S+)
+Value NEIG_COUNT (\d+)
+Value HELLO_INTVL (\d+)
+Value DR_PRI (\d+)
+Value DR_ADDR (\S+)
+Value PKT_Q (\d+)
+Value PKT_D (\d+)
+
+Start
+  ^\s+Count      Intvl Pri -> Table
+
+Table
+  ^${ADDRESS}\s+${INTERFACE}\s+${MODE}\s+${NEIG_COUNT}\s+${HELLO_INTVL}\s+${DR_PRI}\s+${DR_ADDR}\s+${PKT_Q}\s+${PKT_D} -> Record
+
+EOF

@@ -1,0 +1,27 @@
+Value Filldown MCAST_GROUP (\d+\.\d+.\d+.\d+)
+Value MCAST_SOURCE (\d+\.\d+.\d+.\d+|\d+\.\d+.\d+.\d+/\d+)
+Value UP_TIME (\S+)
+Value RP (\d+\.\d+.\d+.\d+)
+Value FLAG (\S+)
+Value INCOMING_INF (\S+)
+Value RPF_ROUTE (.*)
+Value List OUTGOING_INF (\S+)
+
+Start
+  ^${MCAST_GROUP}$$ -> MCastGroup
+
+MCastGroup
+  ^  ${MCAST_SOURCE}, ${UP_TIME}, RP ${RP}, flags: ${FLAG} -> MCastSource
+  ^  ${MCAST_SOURCE}, ${UP_TIME}, flags: ${FLAG} -> MCastSource
+
+MCastSource
+  ^    Incoming interface: ${INCOMING_INF}
+  ^    RPF route: ${RPF_ROUTE}
+  ^    Outgoing interface list: -> OutGoingInterface
+
+OutGoingInterface
+  ^      ${OUTGOING_INF}
+  ^.* -> Continue.Record
+  ^  ${MCAST_SOURCE}, ${UP_TIME}, RP ${RP}, flags: ${FLAG} -> MCastSource
+  ^  ${MCAST_SOURCE}, ${UP_TIME}, flags: ${FLAG} -> MCastSource
+  ^${MCAST_GROUP} -> MCastGroup

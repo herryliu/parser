@@ -1,0 +1,1324 @@
+jpncore1#show ip mroute
+PIM Sparse Mode Multicast Routing Table
+Flags: E - Entry forwarding on the RPT, J - Joining to the SPT
+       R - RPT bit is set, S - SPT bit is set
+       W - Wildcard entry, X - External component interest
+       I - SG Include Join alert rcvd, P - Ex-Prune alert rcvd
+       H - Joining SPT due to policy, D - Joining SPT due to protocol
+       Z - Entry marked for deletion
+       A - Learned via Anycast RP Router, M - Learned via MSDP
+       N - May notify MSDP
+RPF route: U - From unicast routing table
+           M - From multicast routing table
+224.0.1.129
+  0.0.0.0/0, 2d06h, RP 10.30.95.1, flags: W
+    Incoming interface: register
+    RPF route: [U][C] 10.30.95.1/32 [0/1] via 10.30.95.1
+    Outgoing interface list:
+      Vlan110
+  10.30.80.10, 2d06h, flags: SAN
+    Incoming interface: Vlan110
+    RPF route: [U][C] 10.30.80.0/24 [0/1] via 10.30.80.3
+    Outgoing interface list:
+239.194.3.51
+  0.0.0.0/0, 09:28:36, RP 10.19.3.1, flags: W
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.19.3.1/32 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+  10.17.12.55, 09:15:33, flags: S
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.17.0.0/17 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+239.194.3.52
+  0.0.0.0/0, 09:28:36, RP 10.19.3.1, flags: W
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.19.3.1/32 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+  10.17.12.65, 09:15:33, flags: S
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.17.0.0/17 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+239.194.3.53
+  0.0.0.0/0, 09:28:36, RP 10.19.3.1, flags: W
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.19.3.1/32 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+  10.17.12.75, 09:15:33, flags: S
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.17.0.0/17 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+239.194.3.54
+  0.0.0.0/0, 09:28:36, RP 10.19.3.1, flags: W
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.19.3.1/32 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+  10.17.12.85, 09:15:33, flags: S
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.17.0.0/17 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+239.194.3.55
+  0.0.0.0/0, 09:28:36, RP 10.19.3.1, flags: W
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.19.3.1/32 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+  10.17.12.94, 09:15:33, flags: S
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.17.0.0/17 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+239.194.3.56
+  0.0.0.0/0, 09:28:36, RP 10.19.3.1, flags: W
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.19.3.1/32 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+  10.17.12.104, 09:15:32, flags: S
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.17.0.0/17 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+239.194.3.57
+  0.0.0.0/0, 09:28:36, RP 10.19.3.1, flags: W
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.19.3.1/32 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+  10.17.12.114, 09:15:31, flags: S
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.17.0.0/17 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+239.194.3.58
+  0.0.0.0/0, 09:28:36, RP 10.19.3.1, flags: W
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.19.3.1/32 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+  10.17.12.124, 09:15:32, flags: S
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.17.0.0/17 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+239.194.3.59
+  0.0.0.0/0, 09:28:36, RP 10.19.3.1, flags: W
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.19.3.1/32 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+  10.17.12.95, 09:15:33, flags: S
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.17.0.0/17 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+239.194.3.60
+  0.0.0.0/0, 09:28:36, RP 10.19.3.1, flags: W
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.19.3.1/32 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+  10.17.12.105, 09:15:33, flags: S
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.17.0.0/17 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+239.194.3.61
+  0.0.0.0/0, 09:28:36, RP 10.19.3.1, flags: W
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.19.3.1/32 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+  10.17.12.115, 09:15:33, flags: S
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.17.0.0/17 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+239.194.3.62
+  0.0.0.0/0, 09:28:36, RP 10.19.3.1, flags: W
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.19.3.1/32 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+  10.17.12.125, 09:15:33, flags: S
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.17.0.0/17 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+239.194.3.90
+  0.0.0.0/0, 09:28:36, RP 10.19.3.1, flags: W
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.19.3.1/32 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+  10.17.12.108, 09:15:36, flags: S
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.17.0.0/17 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+239.194.3.111
+  0.0.0.0/0, 09:28:36, RP 10.19.3.1, flags: W
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.19.3.1/32 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+  10.17.12.134, 09:15:33, flags: S
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.17.0.0/17 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+239.194.3.120
+  0.0.0.0/0, 09:28:36, RP 10.19.3.1, flags: W
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.19.3.1/32 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+  10.17.12.137, 09:15:37, flags: S
+    Incoming interface: Ethernet37
+    RPF route: [U][S] 10.17.0.0/17 [1/0] via 10.70.15.73
+    Outgoing interface list:
+      Vlan590
+239.194.11.1
+  0.0.0.0/0, 08:29:36, RP 10.19.3.11, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.19.3.11/32 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan413
+  10.18.9.1, 08:29:35, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.18.9.0/24 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan413
+239.194.12.1
+  0.0.0.0/0, 08:29:36, RP 10.19.3.12, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.19.3.12/32 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan902
+  10.18.10.2, 08:29:35, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.18.10.0/24 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan902
+239.255.10.1
+  0.0.0.0/0, 09:25:19, RP 10.5.254.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.4.0.38, 09:25:18, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.4.32.55, 09:25:18, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.5.4.69, 09:25:19, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.5.4.70, 09:25:19, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.5.4.93, 09:25:18, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.12.84.32, 09:25:17, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.12.96.21, 09:25:18, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.12.128.29, 09:25:18, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.12.161.67, 09:25:18, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.12.200.72, 09:25:19, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.12.224.10, 09:25:18, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.14.0.21, 09:25:14, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.14.4.35, 09:25:17, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.14.4.39, 09:25:17, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.14.8.34, 09:25:14, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.14.20.35, 09:25:14, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.15.0.23, 09:25:14, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.15.32.35, 09:25:17, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.15.48.17, 09:25:14, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.15.64.21, 09:25:17, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.15.80.21, 09:24:58, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.15.96.21, 09:25:16, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.30.32.24, 09:25:14, flags: SR
+    Incoming interface: Ethernet33
+    RPF route: [U][O] 10.30.32.0/24 [110/110] via 10.30.94.6
+    Outgoing interface list:
+      Vlan110
+      Vlan216
+      Vlan224
+  10.30.48.25, 09:25:15, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.48.0/24 [110/2220] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.30.64.37, 09:25:06, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.30.80.47, 09:25:14, flags: SRN
+    Incoming interface: Vlan110
+    RPF route: [U][C] 10.30.80.0/24 [0/1] via 10.30.80.3
+    Outgoing interface list:
+      Ethernet33
+      Vlan216
+      Vlan224
+  10.30.80.48, 09:25:17, flags: SRN
+    Incoming interface: Vlan110
+    RPF route: [U][C] 10.30.80.0/24 [0/1] via 10.30.80.3
+    Outgoing interface list:
+      Ethernet33
+      Vlan216
+      Vlan224
+  10.30.144.24, 09:25:19, flags: SR
+    Incoming interface: Vlan902
+    RPF route: [U][B] 10.30.144.0/20 [200/0] via 10.30.94.2
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+      Vlan216
+  10.30.208.25, 09:25:15, flags: SR
+    Incoming interface: Vlan224
+    RPF route: [U][B] 10.30.208.0/20 [200/0] via 10.30.94.38
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+      Vlan216
+  10.31.0.25, 09:25:16, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.31.0.0/20 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.31.64.22, 09:25:15, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.31.64.0/20 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.31.80.26, 09:25:14, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.31.80.0/20 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+239.255.10.3
+  0.0.0.0/0, 09:30:14, RP 10.5.254.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+239.255.10.4
+  0.0.0.0/0, 09:30:07, RP 10.5.254.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+  10.5.5.36, 09:30:06, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.0.0.0/8 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Vlan902
+      Ethernet33
+      Vlan224
+239.255.101.6
+  0.0.0.0/0, 09:25:38, RP 10.30.95.1, flags: W
+    Incoming interface: register
+    RPF route: [U][C] 10.30.95.1/32 [0/1] via 10.30.95.1
+    Outgoing interface list:
+      Vlan110
+239.255.101.7
+  0.0.0.0/0, 09:30:30, RP 10.30.95.1, flags: W
+    Incoming interface: register
+    RPF route: [U][C] 10.30.95.1/32 [0/1] via 10.30.95.1
+    Outgoing interface list:
+      Vlan110
+  10.30.80.47, 00:17:42, flags: SN
+    Incoming interface: Vlan110
+    RPF route: [U][C] 10.30.80.0/24 [0/1] via 10.30.80.3
+    Outgoing interface list:
+239.255.101.124
+  0.0.0.0/0, 08:17:40, RP 10.30.95.1, flags: W
+    Incoming interface: register
+    RPF route: [U][C] 10.30.95.1/32 [0/1] via 10.30.95.1
+    Outgoing interface list:
+      Vlan110
+239.255.160.1
+  0.0.0.0/0, 09:30:06, RP 10.31.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.31.64.0/20 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.31.64.27, 09:30:05, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.31.64.0/20 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.160.2
+  0.0.0.0/0, 2d06h, RP 10.31.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.31.64.0/20 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.31.64.28, 2d06h, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.31.64.0/20 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.162.2
+  0.0.0.0/0, 2d06h, RP 10.30.159.254, flags: W
+    Incoming interface: Vlan902
+    RPF route: [U][B] 10.30.144.0/20 [200/0] via 10.30.94.2
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+      Vlan216
+  10.30.144.23, 2d06h, flags: S
+    Incoming interface: Vlan902
+    RPF route: [U][B] 10.30.144.0/20 [200/0] via 10.30.94.2
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+      Vlan216
+239.255.162.3
+  0.0.0.0/0, 09:24:03, RP 10.30.159.254, flags: W
+    Incoming interface: Vlan902
+    RPF route: [U][B] 10.30.144.0/20 [200/0] via 10.30.94.2
+    Outgoing interface list:
+      Vlan216
+  10.30.144.14, 09:24:02, flags: S
+    Incoming interface: Vlan902
+    RPF route: [U][B] 10.30.144.0/20 [200/0] via 10.30.94.2
+    Outgoing interface list:
+      Vlan216
+239.255.163.1
+  0.0.0.0/0, 2d06h, RP 10.31.15.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.31.0.0/20 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.31.0.22, 2d06h, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.31.0.0/20 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.163.2
+  0.0.0.0/0, 09:30:13, RP 10.31.15.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.31.0.0/20 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.31.0.22, 09:30:12, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.31.0.0/20 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.164.3
+  0.0.0.0/0, 2d06h, RP 10.30.47.254, flags: W
+    Incoming interface: Ethernet33
+    RPF route: [U][O] 10.30.47.254/32 [110/20] via 10.30.94.6
+    Outgoing interface list:
+      Vlan110
+      Vlan216
+  10.30.32.25, 2d06h, flags: S
+    Incoming interface: Ethernet33
+    RPF route: [U][O] 10.30.32.0/24 [110/110] via 10.30.94.6
+    Outgoing interface list:
+      Vlan110
+      Vlan216
+239.255.165.2
+  0.0.0.0/0, 2d06h, RP 10.30.223.254, flags: W
+    Incoming interface: Vlan224
+    RPF route: [U][B] 10.30.208.0/20 [200/0] via 10.30.94.38
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+      Vlan216
+  10.30.208.22, 2d06h, flags: S
+    Incoming interface: Vlan224
+    RPF route: [U][B] 10.30.208.0/20 [200/0] via 10.30.94.38
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+      Vlan216
+239.255.165.3
+  0.0.0.0/0, 2d06h, RP 10.30.223.254, flags: W
+    Incoming interface: Vlan224
+    RPF route: [U][B] 10.30.208.0/20 [200/0] via 10.30.94.38
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+      Vlan216
+  10.30.208.22, 2d06h, flags: S
+    Incoming interface: Vlan224
+    RPF route: [U][B] 10.30.208.0/20 [200/0] via 10.30.94.38
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+      Vlan216
+239.255.166.1
+  0.0.0.0/0, 2d06h, RP 10.30.63.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.63.254/32 [110/2130] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.48.23, 2d06h, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.48.0/24 [110/2220] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.166.2
+  0.0.0.0/0, 2d06h, RP 10.30.63.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.63.254/32 [110/2130] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.48.23, 2d06h, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.48.0/24 [110/2220] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.166.3
+  0.0.0.0/0, 1d17h, RP 10.30.63.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.63.254/32 [110/2130] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.48.23, 1d17h, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.48.0/24 [110/2220] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.166.4
+  0.0.0.0/0, 2d06h, RP 10.30.63.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.63.254/32 [110/2130] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.48.23, 2d06h, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.48.0/24 [110/2220] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.166.5
+  0.0.0.0/0, 2d06h, RP 10.30.63.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.63.254/32 [110/2130] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.48.23, 2d06h, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.48.0/24 [110/2220] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.167.3
+  0.0.0.0/0, 2d06h, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.23, 2d06h, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.167.4
+  0.0.0.0/0, 2d06h, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.33, 2d06h, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.167.5
+  0.0.0.0/0, 2d06h, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.23, 2d06h, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.168.1
+  0.0.0.0/0, 2d06h, RP 10.30.95.254, flags: W
+    Incoming interface: register
+    RPF route: [U][C] 10.30.95.254/32 [0/1] via 10.30.95.254
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+      Vlan216
+  10.30.80.63, 2d05h, flags: SAN
+    Incoming interface: Vlan110
+    RPF route: [U][C] 10.30.80.0/24 [0/1] via 10.30.80.3
+    Outgoing interface list:
+      Ethernet33
+      Vlan216
+239.255.168.2
+  0.0.0.0/0, 2d06h, RP 10.30.95.254, flags: W
+    Incoming interface: register
+    RPF route: [U][C] 10.30.95.254/32 [0/1] via 10.30.95.254
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+      Vlan216
+  10.30.80.64, 2d06h, flags: SAN
+    Incoming interface: Vlan110
+    RPF route: [U][C] 10.30.80.0/24 [0/1] via 10.30.80.3
+    Outgoing interface list:
+      Ethernet33
+      Vlan216
+239.255.169.1
+  0.0.0.0/0, 09:30:07, RP 10.31.95.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.31.80.0/20 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.31.80.24, 09:30:06, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.31.80.0/20 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.128
+  0.0.0.0/0, 09:30:30, RP 10.30.63.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.63.254/32 [110/2130] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.48.23, 09:30:29, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.48.0/24 [110/2220] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.129
+  0.0.0.0/0, 09:30:30, RP 10.30.63.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.63.254/32 [110/2130] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.48.23, 09:30:29, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.48.0/24 [110/2220] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.130
+  0.0.0.0/0, 09:30:30, RP 10.30.63.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.63.254/32 [110/2130] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.48.23, 09:30:29, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.48.0/24 [110/2220] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.131
+  0.0.0.0/0, 09:30:30, RP 10.30.63.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.63.254/32 [110/2130] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.48.23, 09:30:29, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.48.0/24 [110/2220] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.132
+  0.0.0.0/0, 09:30:30, RP 10.30.63.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.63.254/32 [110/2130] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.48.23, 09:30:29, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.48.0/24 [110/2220] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.133
+  0.0.0.0/0, 09:30:30, RP 10.30.63.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.63.254/32 [110/2130] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.48.23, 09:30:29, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.48.0/24 [110/2220] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.134
+  0.0.0.0/0, 09:30:30, RP 10.30.63.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.63.254/32 [110/2130] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.48.23, 09:30:29, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.48.0/24 [110/2220] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.135
+  0.0.0.0/0, 09:30:30, RP 10.30.63.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.63.254/32 [110/2130] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.48.23, 09:30:29, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.48.0/24 [110/2220] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.136
+  0.0.0.0/0, 09:30:30, RP 10.30.63.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.63.254/32 [110/2130] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.48.23, 09:30:29, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.48.0/24 [110/2220] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.192
+  0.0.0.0/0, 09:30:30, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.37, 09:30:29, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.193
+  0.0.0.0/0, 09:30:30, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.37, 09:30:30, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.194
+  0.0.0.0/0, 09:30:30, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.37, 09:30:29, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.195
+  0.0.0.0/0, 09:30:30, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.37, 09:30:30, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.196
+  0.0.0.0/0, 09:30:30, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.37, 09:30:30, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.197
+  0.0.0.0/0, 09:30:30, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.37, 09:30:30, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.198
+  0.0.0.0/0, 09:30:30, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.37, 09:30:30, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.199
+  0.0.0.0/0, 09:30:30, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.37, 09:30:29, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.201
+  0.0.0.0/0, 09:30:30, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.37, 09:30:29, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.202
+  0.0.0.0/0, 09:30:30, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.37, 09:30:30, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.203
+  0.0.0.0/0, 09:30:30, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.37, 09:30:29, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.204
+  0.0.0.0/0, 09:26:37, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.37, 09:26:36, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.205
+  0.0.0.0/0, 09:30:30, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.37, 09:30:30, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.206
+  0.0.0.0/0, 09:30:30, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.37, 09:30:30, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.207
+  0.0.0.0/0, 09:30:30, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.37, 09:30:29, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.210
+  0.0.0.0/0, 09:26:37, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.37, 09:26:36, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.211
+  0.0.0.0/0, 09:26:37, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.37, 09:26:36, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.214
+  0.0.0.0/0, 09:30:30, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.37, 09:30:30, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.185.218
+  0.0.0.0/0, 09:30:30, RP 10.30.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.79.254/32 [110/1020] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.37, 09:30:30, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.189.0
+  0.0.0.0/0, 1d17h, RP 10.30.31.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.31.254/32 [110/1230] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.32.25, 1d17h, flags: SR
+    Incoming interface: Ethernet33
+    RPF route: [U][O] 10.30.32.0/24 [110/110] via 10.30.94.6
+    Outgoing interface list:
+      Vlan110
+      Vlan216
+  10.30.32.50, 1d17h, flags: SR
+    Incoming interface: Ethernet33
+    RPF route: [U][O] 10.30.32.0/24 [110/110] via 10.30.94.6
+    Outgoing interface list:
+      Vlan110
+      Vlan216
+239.255.189.2
+  0.0.0.0/0, 1d17h, RP 10.30.31.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.31.254/32 [110/1230] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.23, 1d17h, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.80.63, 2d05h, flags: SRN
+    Incoming interface: Vlan110
+    RPF route: [U][C] 10.30.80.0/24 [0/1] via 10.30.80.3
+    Outgoing interface list:
+      Ethernet33
+      Vlan216
+239.255.189.3
+  0.0.0.0/0, 1d17h, RP 10.30.31.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.31.254/32 [110/1230] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.48.23, 1d17h, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.48.0/24 [110/2220] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.37, 1d08h, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.189.4
+  0.0.0.0/0, 2d06h, RP 10.30.31.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.31.254/32 [110/1230] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.64.37, 2d06h, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.64.0/24 [110/1110] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.80.47, 2d06h, flags: SRN
+    Incoming interface: Vlan110
+    RPF route: [U][C] 10.30.80.0/24 [0/1] via 10.30.80.3
+    Outgoing interface list:
+      Ethernet33
+      Vlan216
+239.255.189.5
+  0.0.0.0/0, 09:25:20, RP 10.30.31.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.31.254/32 [110/1230] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.31.64.27, 09:25:18, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.31.64.0/20 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.31.80.24, 09:25:18, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.31.80.0/20 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.189.6
+  0.0.0.0/0, 1d17h, RP 10.30.31.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][O] 10.30.31.254/32 [110/1230] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.30.80.34, 2d05h, flags: SRN
+    Incoming interface: Vlan110
+    RPF route: [U][C] 10.30.80.0/24 [0/1] via 10.30.80.3
+    Outgoing interface list:
+      Ethernet33
+      Vlan216
+239.255.190.4
+  0.0.0.0/0, 09:11:51, RP 10.31.79.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.31.64.0/20 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.31.64.28, 09:11:51, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.31.64.0/20 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.190.33
+  0.0.0.0/0, 09:25:38, RP 10.30.159.254, flags: W
+    Incoming interface: Vlan902
+    RPF route: [U][B] 10.30.144.0/20 [200/0] via 10.30.94.2
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+      Vlan216
+  10.30.144.23, 09:25:38, flags: S
+    Incoming interface: Vlan902
+    RPF route: [U][B] 10.30.144.0/20 [200/0] via 10.30.94.2
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+      Vlan216
+239.255.190.50
+  0.0.0.0/0, 09:25:38, RP 10.31.15.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.31.0.0/20 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.31.0.22, 09:25:38, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.31.0.0/20 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.190.51
+  0.0.0.0/0, 09:11:51, RP 10.31.15.254, flags: W
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.31.0.0/20 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+  10.31.0.22, 09:11:50, flags: S
+    Incoming interface: Vlan216
+    RPF route: [U][B] 10.31.0.0/20 [200/0] via 10.30.94.29
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+239.255.190.82
+  0.0.0.0/0, 09:25:38, RP 10.30.223.254, flags: W
+    Incoming interface: Vlan224
+    RPF route: [U][B] 10.30.208.0/20 [200/0] via 10.30.94.38
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+      Vlan216
+  10.30.208.39, 09:25:38, flags: S
+    Incoming interface: Vlan224
+    RPF route: [U][B] 10.30.208.0/20 [200/0] via 10.30.94.38
+    Outgoing interface list:
+      Vlan110
+      Ethernet33
+      Vlan216
