@@ -1,0 +1,13 @@
+Value NEIGHBOR (\S+)
+Value INTERFACE (\S+)
+Value UP_TIME (\S+)
+Value EXPIRES (\S+)
+Value MODE (\S+)
+
+Start
+  ^Neighbor Address   Interface        Uptime     Expires    Mode -> Table
+
+Table
+  ^${NEIGHBOR}\s+${INTERFACE}\s+${UP_TIME}\s+${EXPIRES}\s+${MODE} -> Record
+
+EOF

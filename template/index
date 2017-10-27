@@ -16,11 +16,8 @@ arista_eos_show_ip_mfib.template, .*, Arista, DEFAULT, sh[[ow]] ip mfib$
 arista_eos_show_ip_mroute.template, .*, Arista, DEFAULT, sh[[ow]] ip mroute$
 arista_eos_show_ip_ospf_database.template, .*, Arista, DEFAULT, sh[[ow]] ip ospf database$
 arista_eos_show_ip_pim_interface.template, .*, Arista, DEFAULT, sh[[ow]] ip pim interface$
+arista_eos_show_ip_pim_neighbor.template, .*, Arista, DEFAULT, sh[[ow]] ip pim neighbor$
+arista_eos_show_lldp_neighbors_detail.template, .*, Arista, DEFAULT, sh[[ow]] lldp neighbors detail$
+arista_eos_show_mac_address_table.template, .*, Arista, DEFAULT, sh[[ow]] mac address-table$
 
-arista_eos_show_ip_route.template, .*, Arista, DEFAULT, sh[[ow]] ip route$
-arista_eos_show_ip_route.template, .*, Arista, DEFAULT, sh[[ow]] ip route$
-arista_eos_show_ip_route.template, .*, Arista, DEFAULT, sh[[ow]] ip route$
-arista_eos_show_ip_route.template, .*, Arista, DEFAULT, sh[[ow]] ip route$
-arista_eos_show_ip_route.template, .*, Arista, DEFAULT, sh[[ow]] ip route$
-arista_eos_show_ip_route.template, .*, Arista, DEFAULT, sh[[ow]] ip route$
-arista_eos_show_ip_route.template, .*, Arista, DEFAULT, sh[[ow]] ip route$
+arista_eos_show_version.template, .*, Arista, DEFAULT, sh[[ow]] version$
